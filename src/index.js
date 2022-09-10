@@ -37,7 +37,7 @@ function createCountry({ flag, name, capital, population, languages }) {
   )}</p>`;
 }
 function setMarkup(countries) {
-  if (countries.length >= 10) {
+  if (countries.length > 10) {
     Notify.info('Too many matches found. Please enter a more specific name.');
 
     return;
