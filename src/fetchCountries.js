@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-export function fetchCountries(country) {
+function fetchCountries(country) {
   const BASE_URL = 'https://restcountries.com/v2/name/';
   const filtersCountries = '?fields=flag,capital,name,population,languages';
   return fetch(`${BASE_URL}${country}${filtersCountries}`)
